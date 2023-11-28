@@ -1,0 +1,34 @@
+.bl-cardUnit {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bl-cardUnit__col3 {
+  margin-bottom: -2rem;
+  .bl-card {
+    width: calc(100% * 310 / 980);
+    margin-bottom: 2rem;
+  }
+}
+
+
+@media (max-width: 1024px) { //タブレット用(600px～1024pxまで)
+  .bl-cardUnit {
+    margin-bottom: -2rem;
+    .bl-card {
+      width: calc((100% - 2rem) / 2);
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media (max-width: 599px) { //スマートフォン用(～599pxまで)
+  .bl-cardUnit {
+    margin-bottom: -3rem;
+    .bl-card {
+      width: 100%;
+      margin-bottom: 3rem;
+    }
+  }
+}

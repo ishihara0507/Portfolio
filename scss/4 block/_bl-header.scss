@@ -1,0 +1,47 @@
+.bl-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .bl-header_imgWrapper {
+    margin: 2rem;
+    img {
+      width: 100%;
+    }
+  }
+  .bl-header_menu {
+    display: flex;
+    .bl-header_link {
+      margin-top: 1rem;
+      margin-right: 2rem;
+    }
+  }
+}
+
+
+@media (max-width: 1024px) { //タブレット用(600px～1024pxまで)
+  .bl-header {
+    .bl-header_imgWrapper{
+      margin: 1rem .5rem;
+    }
+    .bl-header_menu {
+      .bl-header_link{
+        margin-top: 0.5rem;
+        margin-right: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 599px) { //スマートフォン用(～599pxまで)
+  .bl-header {
+    .bl-header_imgWrapper {
+      width: 30%;
+    }
+    .bl-header_menu {
+      .bl-header_link {
+        font-size: 1.1rem;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
